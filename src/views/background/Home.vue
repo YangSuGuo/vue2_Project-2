@@ -165,6 +165,12 @@ export default {
                 size: 'large',
                 type: 'primary',
                 icon: 'el-icon-finished'
+            }, {
+                content: 'vuex',
+                timestamp: 'V3.6.2 状态管理',
+                size: 'large',
+                type: 'primary',
+                icon: 'el-icon-finished'
             }],
             currentDate: new Date()
         };
