@@ -1,18 +1,17 @@
 <template>
     <div id="Dashboard">
         <div class="Dashboard03">
-            <div class="图表05" ref="Dashboard05"></div>
+            <div ref="Dashboard05" class="图表05"></div>
 
             <div id="Dashboard02">
-                <div class="图表" ref="Dashboard"></div>
-                <div class="图表" ref="Dashboard02"></div>
+                <div ref="Dashboard" class="图表"></div>
+                <div ref="Dashboard02" class="图表"></div>
             </div>
-
         </div>
 
         <div>
-            <div class="图表04" ref="Dashboard04"></div>
-            <div class="图表03" ref="Dashboard03"></div>
+            <div ref="Dashboard04" class="图表04"></div>
+            <div ref="Dashboard03" class="图表03"></div>
         </div>
 
     </div>
@@ -440,7 +439,7 @@ export default {
                         style: {
                             text: '楊蘇國',
                             fontSize: 30,
-                            lineDash: [20,200],
+                            lineDash: [20, 200],
                             lineDashOffset: 0,
                             fill: 'transparent',
                             stroke: '#606266',

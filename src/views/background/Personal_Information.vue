@@ -193,7 +193,7 @@
                                 <i class="el-icon-user"></i>
                                 手机号
                             </template>
-                           {{contact.Mobile_phone_number}}
+                            {{ contact.Mobile_phone_number }}
                         </el-descriptions-item>
                         <el-descriptions-item>
                             <template slot="label">
@@ -287,28 +287,28 @@ export default {
                 domicile: "四川省成都市双流区",
                 Nature_of_household_registration: "城镇"
             },
-            School:{
-                grade:"2022",
-                educational_system:"3",
-                major:"移动应用开发",
-                department:"信息工程学院",
-                School_entry_time:"2022-09-04",
-                Graduation_time:"2025-06-30",
-                Home_campus:"金堂校区",
-                Belong_to_the_class:"移动2208班",
-                School_status:"在读",
-                Education_mailbox:"2022090301237@cdivtc.edu.cn",
+            School: {
+                grade: "2022",
+                educational_system: "3",
+                major: "移动应用开发",
+                department: "信息工程学院",
+                School_entry_time: "2022-09-04",
+                Graduation_time: "2025-06-30",
+                Home_campus: "金堂校区",
+                Belong_to_the_class: "移动2208班",
+                School_status: "在读",
+                Education_mailbox: "2022090301237@cdivtc.edu.cn",
             },
-            contact:{
-                Mobile_phone_number:"19802898927",
-                Alternate_phone_number:"18782165409",
-                Emergency_contacts:"135*****485",
-                E_mail01:"3130876713@qq.com",
-                E_mail02:"19802898927@139.com",
-                E_mail03:"ab20021017cd@gmail.com",
-                qq:"3130876713",
-                Wechat:"YSG5409",
-                Twitter:"杨苏国",
+            contact: {
+                Mobile_phone_number: "19802898927",
+                Alternate_phone_number: "18782165409",
+                Emergency_contacts: "135*****485",
+                E_mail01: "3130876713@qq.com",
+                E_mail02: "19802898927@139.com",
+                E_mail03: "ab20021017cd@gmail.com",
+                qq: "3130876713",
+                Wechat: "YSG5409",
+                Twitter: "杨苏国",
             },
         };
     },

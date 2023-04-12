@@ -1,12 +1,12 @@
 <template>
-<div>
-  <h1>消息通知</h1>
-</div>
+    <div>
+        <h1>消息通知</h1>
+    </div>
 </template>
 
 <script>
 export default {
-  name: "Message_notifications"
+    name: "Message_notifications"
 }
 </script>
 

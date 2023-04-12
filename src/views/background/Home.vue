@@ -6,11 +6,11 @@
                 <el-timeline-item
                         v-for="(activity, index) in activities"
                         :key="index"
-                        :icon="activity.icon"
-                        :type="activity.type"
                         :color="activity.color"
+                        :icon="activity.icon"
                         :size="activity.size"
-                        :timestamp="activity.timestamp">
+                        :timestamp="activity.timestamp"
+                        :type="activity.type">
                     {{ activity.content }}
                 </el-timeline-item>
             </el-timeline>
@@ -21,11 +21,11 @@
                 <el-timeline-item
                         v-for="(depend, index) in depend"
                         :key="index"
-                        :icon="depend.icon"
-                        :type="depend.type"
                         :color="depend.color"
+                        :icon="depend.icon"
                         :size="depend.size"
-                        :timestamp="depend.timestamp">
+                        :timestamp="depend.timestamp"
+                        :type="depend.type">
                     {{ depend.content }}
                 </el-timeline-item>
             </el-timeline>
@@ -33,11 +33,11 @@
         <div class="小组成员">
             <h1 class="小组成员标题">小组成员：</h1>
             <el-row>
-                <el-col class="卡片" :span="8">
-                    <el-card class="卡片01" shadow="always" :body-style="{ padding: '0px' }">
-                        <img class="image"
-                             src="https://i.328888.xyz/2023/03/27/inNe9A.jpeg"
-                             alt="背景图">
+                <el-col :span="8" class="卡片">
+                    <el-card :body-style="{ padding: '0px' }" class="卡片01" shadow="always">
+                        <img alt="背景图"
+                             class="image"
+                             src="https://i.328888.xyz/2023/03/27/inNe9A.jpeg">
                         <div style="padding: 14px;">
                             <el-avatar
                                     class="图片"
@@ -50,10 +50,10 @@
                         </div>
                     </el-card>
 
-                    <el-card class="卡片02" shadow="always" :body-style="{ padding: '0px' }">
-                        <img class="image"
-                             src="https://i.328888.xyz/2023/03/30/i0G3Pq.jpeg"
-                             alt="背景图">
+                    <el-card :body-style="{ padding: '0px' }" class="卡片02" shadow="always">
+                        <img alt="背景图"
+                             class="image"
+                             src="https://i.328888.xyz/2023/03/30/i0G3Pq.jpeg">
                         <div style="padding: 14px;">
                             <el-avatar
                                     class="图片"
@@ -66,10 +66,10 @@
                         </div>
                     </el-card>
 
-                    <el-card class="卡片03" shadow="always" :body-style="{ padding: '0px' }">
-                        <img class="image"
-                             src="https://i.328888.xyz/2023/03/31/iwpBcL.jpeg"
-                             alt="背景图">
+                    <el-card :body-style="{ padding: '0px' }" class="卡片03" shadow="always">
+                        <img alt="背景图"
+                             class="image"
+                             src="https://i.328888.xyz/2023/03/31/iwpBcL.jpeg">
                         <div style="padding: 14px;">
                             <el-avatar
                                     class="图片"

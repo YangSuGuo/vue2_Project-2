@@ -9,7 +9,7 @@ import Home from "@/views/background/Home.vue";
 import Dashboard from "@/views/background/Dashboard.vue";
 import Personal_Information from "@/views/background/Personal_Information.vue";
 import Course_information from "@/views/background/Course_information.vue";
-import Service_subscriptions from "@/views/background/Service_subscriptions.vue";
+import Map from "@/views/background/Map.vue";
 import Notes_ToDo from "@/views/background/Notes_ToDo.vue";
 //用户子页面
 import Account_management from "@/views/user/Account_management.vue";
@@ -57,9 +57,9 @@ const routes = [
                 component: Course_information
             },
             {
-                path: 'Service_subscriptions',
-                name: 'Service_subscriptions',
-                component: Service_subscriptions
+                path: 'Map',
+                name: 'Map',
+                component: Map
             },
             {
                 path: 'Notes_ToDo',

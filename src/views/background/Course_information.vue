@@ -1,52 +1,53 @@
 <template>
     <div id="Course_information">
         <div class="panel">
-            <el-tabs type="border-card" v-model="activeName" @tab-click="handleClick">
+            <el-tabs v-model="activeName" type="border-card" @tab-click="handleClick">
                 <el-tab-pane label="课表" name="课表">
-                    <el-table :data="timetable" :span-method="objectSpanMethod" border
+                    <el-table :cell-style="tableCellStyle" :data="timetable"
                               :header-cell-style="{background:'#d9e5fd', color:'black', fontWeight: 1000}"
-                              :cell-style="tableCellStyle">
-                        <el-table-column prop="sjd" label="时间段" width="80" align="center">
+                              :span-method="objectSpanMethod"
+                              border>
+                        <el-table-column align="center" label="时间段" prop="sjd" width="80">
                         </el-table-column>
-                        <el-table-column prop="jc" label="节次" width="80" align="center">
+                        <el-table-column align="center" label="节次" prop="jc" width="80">
                         </el-table-column>
-                        <el-table-column prop="mon" label="星期一" align="center">
+                        <el-table-column align="center" label="星期一" prop="mon">
                             <template slot-scope="scope">
                                 <h4>{{ scope.row.mon.title }}</h4>
                                 <div v-html="scope.row.mon.content"></div>
                             </template>
                         </el-table-column>
-                        <el-table-column prop="tue" label="星期二" align="center">
+                        <el-table-column align="center" label="星期二" prop="tue">
                             <template slot-scope="scope">
                                 <h4>{{ scope.row.tue.title }}</h4>
                                 <div v-html="scope.row.tue.content"></div>
                             </template>
                         </el-table-column>
-                        <el-table-column prop="wed" label="星期三" align="center">
+                        <el-table-column align="center" label="星期三" prop="wed">
                             <template slot-scope="scope">
                                 <h4>{{ scope.row.wed.title }}</h4>
                                 <div v-html="scope.row.wed.content"></div>
                             </template>
                         </el-table-column>
-                        <el-table-column prop="thu" label="星期四" align="center">
+                        <el-table-column align="center" label="星期四" prop="thu">
                             <template slot-scope="scope">
                                 <h4>{{ scope.row.thu.title }}</h4>
                                 <div v-html="scope.row.thu.content"></div>
                             </template>
                         </el-table-column>
-                        <el-table-column prop="fri" label="星期五" align="center">
+                        <el-table-column align="center" label="星期五" prop="fri">
                             <template slot-scope="scope">
                                 <h4>{{ scope.row.fri.title }}</h4>
                                 <div v-html="scope.row.fri.content"></div>
                             </template>
                         </el-table-column>
-                        <el-table-column prop="sat" label="星期六" align="center">
+                        <el-table-column align="center" label="星期六" prop="sat">
                             <template slot-scope="scope">
                                 <h4>{{ scope.row.sat.title }}</h4>
                                 <div v-html="scope.row.sat.content"></div>
                             </template>
                         </el-table-column>
-                        <el-table-column prop="sun" label="星期日" align="center">
+                        <el-table-column align="center" label="星期日" prop="sun">
                             <template slot-scope="scope">
                                 <h4>{{ scope.row.sun.title }}</h4>
                                 <div v-html="scope.row.sun.content"></div>
@@ -63,33 +64,33 @@
                                     stripe
                                     style="width: 100%">
                                 <el-table-column
-                                        prop="semester"
                                         label="学年学期"
+                                        prop="semester"
                                         sortable
                                         width="180">
                                 </el-table-column>
                                 <el-table-column
-                                        prop="Course_name"
                                         label="课程名称"
+                                        prop="Course_name"
                                         width="180">
                                 </el-table-column>
                                 <el-table-column
-                                        prop="Course_category"
-                                        label="课程类别">
+                                        label="课程类别"
+                                        prop="Course_category">
                                 </el-table-column>
                                 <el-table-column
-                                        prop="Credits"
                                         label="学分"
+                                        prop="Credits"
                                         sortable>
                                 </el-table-column>
                                 <el-table-column
-                                        prop="grades"
                                         label="最终成绩"
+                                        prop="grades"
                                         sortable>
                                 </el-table-column>
                                 <el-table-column
-                                        prop="GPA"
                                         label="绩点"
+                                        prop="GPA"
                                         sortable>
                                 </el-table-column>
                             </el-table>
@@ -105,33 +106,33 @@
                                         style="width: 100% ">
                                     <el-table-column label="汇总">
                                         <el-table-column
-                                                prop="semester"
                                                 label="学年度"
+                                                prop="semester"
                                         >
                                         </el-table-column>
                                         <el-table-column
-                                                prop="semester2"
                                                 label="学期"
+                                                prop="semester2"
                                         >
                                         </el-table-column>
                                         <el-table-column
-                                                prop="Number_of_doors"
                                                 label="门数"
+                                                prop="Number_of_doors"
                                         >
                                         </el-table-column>
                                         <el-table-column
-                                                prop="Total_credits"
                                                 label="总学分"
+                                                prop="Total_credits"
                                         >
                                         </el-table-column>
                                         <el-table-column
-                                                prop="GPA"
                                                 label="总绩点"
+                                                prop="GPA"
                                         >
                                         </el-table-column>
                                         <el-table-column
-                                                prop="Grade_point_average"
                                                 label="平均绩点"
+                                                prop="Grade_point_average"
                                         >
                                         </el-table-column>
                                     </el-table-column>
@@ -176,63 +177,7 @@ export default {
 
             activeName: '课表',
 
-            tableData: [{
-                semester: '2022-2023 1',
-                Course_name: '体育与健康（一）',
-                Course_category: '公共必修',
-                Credits: '1',
-                grades: '80',
-                GPA: '3'
-            }, {
-                semester: '2022-2023 1',
-                Course_name: '形势与政策（一）',
-                Course_category: '思想政治与心理健康教育模块',
-                Credits: '0.17',
-                grades: '60',
-                GPA: '1'
-            }, {
-                semester: '2022-2023 1',
-                Course_name: '思想道德与法治（一）',
-                Course_category: '思想政治与心理健康教育模块',
-                Credits: '1.5',
-                grades: '84',
-                GPA: '3.4'
-            }, {
-                semester: '2022-2023 1',
-                Course_name: '职业发展与规划',
-                Course_category: '职业素质模块',
-                Credits: '6',
-                grades: '83',
-                GPA: '3.3'
-            }, {
-                semester: '2022-2023 1',
-                Course_name: '大学美育',
-                Course_category: '公共必修',
-                Credits: '2',
-                grades: '63',
-                GPA: '1.3'
-            }, {
-                semester: '2022-2023 1',
-                Course_name: 'Java程序开发',
-                Course_category: '基础理论知识模块',
-                Credits: '8',
-                grades: '85',
-                GPA: '3.5'
-            }, {
-                semester: '2022-2023 1',
-                Course_name: '大学生心理健康教育',
-                Course_category: '思想政治与心理健康教育模块',
-                Credits: '2',
-                grades: '94',
-                GPA: '4.4'
-            }, {
-                semester: '2022-2023 1',
-                Course_name: '劳动教育（一）',
-                Course_category: '劳动教育模块',
-                Credits: '0.5',
-                grades: '76',
-                GPA: '2.6'
-            }],
+            tableData: [{}],
 
             // 成绩汇总
             tableDataSummary: [
@@ -298,7 +243,7 @@ export default {
 </script>
 
 <style scoped>
-#Course_information{
+#Course_information {
 
 }
 </style>

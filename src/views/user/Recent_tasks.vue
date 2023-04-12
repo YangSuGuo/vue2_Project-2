@@ -1,12 +1,12 @@
 <template>
-<div>
-  <h1>最近任务</h1>
-</div>
+    <div>
+        <h1>最近任务</h1>
+    </div>
 </template>
 
 <script>
 export default {
-  name: "Recent_tasks"
+    name: "Recent_tasks"
 }
 </script>
 

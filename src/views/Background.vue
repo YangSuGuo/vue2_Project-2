@@ -94,9 +94,9 @@
                                     <i class="el-icon-data-analysis"></i>
                                     <span slot="title">课程信息</span>
                                 </el-menu-item>
-                                <el-menu-item class="列表" index="/Background/Service_subscriptions">
-                                    <i class="el-icon-coordinate"></i>
-                                    <span slot="title">服务订阅</span>
+                                <el-menu-item class="列表" index="/Background/Map">
+                                    <i class="el-icon-location-outline"></i>
+                                    <span slot="title">百度地图</span>
                                 </el-menu-item>
                                 <el-menu-item class="列表" index="/Background/Notes_ToDo">
                                     <i class="el-icon-notebook-1"></i>
