@@ -102,6 +102,10 @@
                                     <i class="el-icon-notebook-1"></i>
                                     <span slot="title">笔记待办</span>
                                 </el-menu-item>
+                                <el-menu-item class="列表" index="/Background/Video_management">
+                                    <i class="el-icon-video-camera"></i>
+                                    <span slot="title">视频管理</span>
+                                </el-menu-item>
                             </el-menu>
                         </el-row>
                     </el-row>

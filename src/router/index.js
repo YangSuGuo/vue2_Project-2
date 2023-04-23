@@ -11,6 +11,7 @@ import Personal_Information from "@/views/background/Personal_Information.vue";
 import Course_information from "@/views/background/Course_information.vue";
 import Map from "@/views/background/Map.vue";
 import Notes_ToDo from "@/views/background/Notes_ToDo.vue";
+import Video_management from "@/views/background/Video_management.vue";
 //用户子页面
 import Account_management from "@/views/user/Account_management.vue";
 import Message_notifications from "@/views/user/Message_notifications.vue";
@@ -65,6 +66,11 @@ const routes = [
                 path: 'Notes_ToDo',
                 name: 'Notes_ToDo',
                 component: Notes_ToDo
+            },
+            {
+                path: 'Video_management',
+                name: 'Video_management',
+                component: Video_management
             },
             //用户子页面
             {

@@ -171,6 +171,18 @@ export default {
                 size: 'large',
                 type: 'primary',
                 icon: 'el-icon-finished'
+            }, {
+                content: 'vue-baidu-map',
+                timestamp: 'V0.21.22 百度地图',
+                size: 'large',
+                type: 'primary',
+                icon: 'el-icon-finished'
+            }, {
+                content: 'element-tiptap',
+                timestamp: 'V1.27.1 富文本编辑器',
+                size: 'large',
+                type: 'primary',
+                icon: 'el-icon-finished'
             }],
             currentDate: new Date()
         };
