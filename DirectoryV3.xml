@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<trees>
+    <tree path="/src/server" title="数据库"/>
+    <tree path="/src/router" title="路由"/>
+    <tree path="/src/views" title="子页面"/>
+    <tree path="/src/assets" title="资源"/>
+    <tree path="/src/components" title="公共页面"/>
+    <tree path="/src/plugins" title="依赖"/>
+    <tree path="/src/server/db" title="链接数据库"/>
+    <tree path="/src/server/db/index.js" title="mysql" extension="js"/>
+    <tree path="/src/server/app.js" title="服务" extension="js"/>
+    <tree path="/src/server/router.js" title="路由" extension="js"/>
+    <tree path="/DirectoryV2.xml" title="备注数据文件夹" extension="xml"/>
+    <tree path="/README.md" title="项目脚本命令" extension="md"/>
+    <tree path="/src/views/Background.vue" title="后台管理" extension="vue"/>
+    <tree path="/src/views/Login.vue" title="登录" extension="vue"/>
+    <tree path="/src/views/background" title="后台管理子页面" icons="ModulesTestRoot"/>
+    <tree path="/src/views/background/Home.vue" title="首页" extension="vue"/>
+    <tree path="/src/views/background/Personal_Information.vue" title="个人信息" extension="vue"/>
+    <tree path="/src/views/background/Course_information.vue" title="课程信息" extension="vue"/>
+    <tree path="/src/views/background/Service_subscriptions.vue" title="服务订阅" extension="vue"/>
+    <tree path="/src/views/background/Notes_ToDo.vue" title="笔记待办" extension="vue"/>
+    <tree path="/src/views/background/dashboard.vue" title="仪表盘" extension="vue"/>
+    <tree path="/src/views/background/Dashboard.vue" title="仪表盘" extension="vue"/>
+    <tree path="/src/views/user" title="用户管理子页面"/>
+    <tree path="/src/views/user/Account_management.vue" title="账号管理" extension="vue"/>
+    <tree path="/src/views/user/Message_notifications.vue" title="消息通知" extension="vue"/>
+    <tree path="/src/views/user/Recent_tasks.vue" title="最近任务" extension="vue"/>
+    <tree path="/src/views/Enroll.vue" title="注册" extension="vue"/>
+    <tree path="/src/store" title="vuex"/>
+    <tree path="/package.json" title="依赖列表" extension="json"/>
+    <tree path="/src/plugins/ECharts.js" title="JS图表" extension="js"/>
+    <tree path="/src/plugins/element.js" title="UI框架" extension="js"/>
+    <tree path="/src/plugins/Element Tiptap Editor.js" title="富文本编辑器" extension="js"/>
+    <tree path="/src/plugins/vue-baidu-map.js" title="百度地图" extension="js"/>
+    <tree path="/src/views/background/Map.vue" title="地图" extension="vue"/>
+    <tree path="/src/views/background/Video_management.vue" title="视频管理"/>
+</trees>
